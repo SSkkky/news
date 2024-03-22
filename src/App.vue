@@ -1,9 +1,11 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <nav>
+      <router-link to="/">작성하기</router-link> |
+      <router-link to="/list">뉴스</router-link>
+    </nav>
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">
