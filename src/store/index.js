@@ -12,7 +12,7 @@ export default createStore({
       state.data.push(data)
     },
     deleteData(state, data) {
-      console.log('push말고 filter라도 해야하남', state, data)
+      state.data = state.data.filter((item) => item.id !== data.id)
     }
   },
   actions: { //비동기 처리 로직들을 정의

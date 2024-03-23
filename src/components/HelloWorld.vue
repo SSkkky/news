@@ -30,7 +30,7 @@ export default {
       let day = today.getDate();
 
       let time = year + '.' + month + '.' + day;
-      this.news({type:'post', data:{id:time, name:this.name, msg:this.msg}});
+      this.news({type:'post', data:{id:new Date().getTime(), date:time, name:this.name, msg:this.msg}});
       this.$router.push('list');
       },
   }
@@ -46,6 +46,7 @@ export default {
       padding: 2rem;
       padding-bottom: 10rem;
       background: url('https://blog.kakaocdn.net/dn/JO2YD/btrdesDB2BR/cngwKI9UOTbtHmfxsUH8W0/img.png');
+      background-color: rgba(255,255,255,0.8);
       background-position: center 1950px;
       background-size: cover;
       border-radius: 1rem;
