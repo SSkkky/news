@@ -33,6 +33,11 @@
   </script>
   
   <style scoped lang="scss">
+  *{
+    margin:0;
+    box-sizing: border-box;
+  }
+
   .list{
     width: 100%;
     display: flex;
@@ -50,13 +55,19 @@
       li{
         position: relative;
         z-index: 0;
-        box-shadow: 0 0 1rem rgb(65, 133, 72);
+        box-sizing: border-box;
+        border: 2px solid rgb(113, 255, 128);
         width: calc((100% - 2rem) / 2);
         list-style: none;
 
         .liCont{
           background: rgba(255,255,255,0.9);
-          padding: 2rem;
+          height: 100%;
+          padding: 1rem;
+
+          p{
+            line-break: anywhere;
+          }
 
           .day{
             position: relative;
